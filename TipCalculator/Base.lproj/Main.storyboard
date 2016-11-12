@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ewa7K29.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="1ki-Yh-MvX">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled 2.png" translatesAutoresizingMaskIntoConstraints="NO" id="H2Q-SC-lZ8" userLabel="ReceiptImageView">
+                                <rect key="frame" x="10" y="34.5" width="300" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="GDf-j1-pMB"/>
+                                    <constraint firstAttribute="height" constant="500" id="sYC-9g-pAB"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Amount" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kPn-Wr-7Ok">
+                                <rect key="frame" x="144" y="171.5" width="132" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jIn-I2-nd3"/>
+                                    <constraint firstAttribute="width" constant="132" id="x0N-sR-Ip6"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" returnKeyType="done"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Im-mN-JzI">
+                                <rect key="frame" x="89" y="397.5" width="142" height="41"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="LOK-jj-xhf"/>
+                                    <constraint firstAttribute="height" constant="41" id="pGp-Ke-8Hz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="15"/>
+                                <state key="normal" title="*Calculate Tip*">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Kf-dy-BIA"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Tip %" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2sB-ga-my7">
+                                <rect key="frame" x="166" y="294.5" width="110" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KKT-xZ-yGN"/>
+                                    <constraint firstAttribute="width" constant="110" id="T4h-Ww-Q3a"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" returnKeyType="done"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip Percentage" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txE-1G-iDQ">
+                                <rect key="frame" x="42" y="288.5" width="134" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="lRr-69-kQn"/>
+                                    <constraint firstAttribute="width" constant="134" id="tbL-vF-hIf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip Amount" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLF-mf-2xB">
+                                <rect key="frame" x="42" y="325.5" width="134" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="S9x-9I-g4w"/>
+                                    <constraint firstAttribute="width" constant="134" id="iZE-iI-Ant"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ax-6v-5Bw">
+                                <rect key="frame" x="169" y="332.5" width="105" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="4bq-Vx-Ogf"/>
+                                    <constraint firstAttribute="height" constant="27" id="SnR-WJ-w1s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Amount" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ra5-9t-otu">
+                                <rect key="frame" x="42" y="178" width="99.5" height="15"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wic-kY-sTd">
+                                <rect key="frame" x="190" y="455" width="84" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="rUO-Js-GLS"/>
+                                    <constraint firstAttribute="width" constant="84" id="xOi-8B-7oQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="H2Q-SC-lZ8" firstAttribute="top" secondItem="Ra5-9t-otu" secondAttribute="bottom" constant="-158" id="1Gz-Mf-uk8"/>
+                            <constraint firstItem="FLF-mf-2xB" firstAttribute="top" secondItem="H2Q-SC-lZ8" secondAttribute="bottom" constant="-209" id="6Lh-OL-l2e"/>
+                            <constraint firstItem="txE-1G-iDQ" firstAttribute="top" secondItem="H2Q-SC-lZ8" secondAttribute="bottom" constant="-246" id="8GG-pt-E18"/>
+                            <constraint firstItem="7Im-mN-JzI" firstAttribute="top" secondItem="H2Q-SC-lZ8" secondAttribute="bottom" constant="-136.5" id="FD8-Kl-6fr"/>
+                            <constraint firstItem="Wic-kY-sTd" firstAttribute="top" secondItem="H2Q-SC-lZ8" secondAttribute="bottom" constant="-79.5" id="GY7-OA-f5y"/>
+                            <constraint firstItem="9ax-6v-5Bw" firstAttribute="top" secondItem="H2Q-SC-lZ8" secondAttribute="bottom" constant="-202" id="JbU-tr-CHB"/>
+                            <constraint firstItem="1ki-Yh-MvX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KN3-Ox-eOe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1ki-Yh-MvX" secondAttribute="bottom" id="MH5-aM-gyR"/>
+                            <constraint firstItem="7Im-mN-JzI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MK3-35-vuH"/>
+                            <constraint firstItem="kPn-Wr-7Ok" firstAttribute="leading" secondItem="H2Q-SC-lZ8" secondAttribute="trailing" constant="-166" id="OSq-Fo-teZ"/>
+                            <constraint firstItem="9ax-6v-5Bw" firstAttribute="leading" secondItem="H2Q-SC-lZ8" secondAttribute="trailing" constant="-141" id="QTF-b3-j49"/>
+                            <constraint firstItem="H2Q-SC-lZ8" firstAttribute="centerX" secondItem="1ki-Yh-MvX" secondAttribute="centerX" id="UHA-qr-9xh"/>
+                            <constraint firstItem="H2Q-SC-lZ8" firstAttribute="leading" secondItem="txE-1G-iDQ" secondAttribute="trailing" constant="-166" id="W24-Fm-P8I"/>
+                            <constraint firstItem="H2Q-SC-lZ8" firstAttribute="centerY" secondItem="1ki-Yh-MvX" secondAttribute="centerY" id="WOJ-Ev-Cdt"/>
+                            <constraint firstAttribute="trailing" secondItem="1ki-Yh-MvX" secondAttribute="trailing" id="Ykm-mR-iwe"/>
+                            <constraint firstItem="H2Q-SC-lZ8" firstAttribute="leading" secondItem="FLF-mf-2xB" secondAttribute="trailing" constant="-166" id="aQv-kX-YHZ"/>
+                            <constraint firstItem="H2Q-SC-lZ8" firstAttribute="top" secondItem="kPn-Wr-7Ok" secondAttribute="bottom" constant="-167" id="dEY-so-1lx"/>
+                            <constraint firstItem="2sB-ga-my7" firstAttribute="top" secondItem="H2Q-SC-lZ8" secondAttribute="bottom" constant="-240" id="e8P-cm-wGO"/>
+                            <constraint firstItem="Wic-kY-sTd" firstAttribute="leading" secondItem="H2Q-SC-lZ8" secondAttribute="trailing" constant="-120" id="ehh-x0-KgE"/>
+                            <constraint firstItem="1ki-Yh-MvX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hB8-HT-ySJ"/>
+                            <constraint firstItem="2sB-ga-my7" firstAttribute="leading" secondItem="H2Q-SC-lZ8" secondAttribute="trailing" constant="-144" id="ic8-qC-aFA"/>
+                            <constraint firstItem="H2Q-SC-lZ8" firstAttribute="leading" secondItem="Ra5-9t-otu" secondAttribute="trailing" constant="-131.5" id="ttP-bK-avC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="billAmountTextField" destination="kPn-Wr-7Ok" id="xAb-oa-M9O"/>
+                        <outlet property="calculateTipButton" destination="7Im-mN-JzI" id="g0Q-F3-YlX"/>
+                        <outlet property="tipAmountLabel" destination="9ax-6v-5Bw" id="tYK-4d-sfw"/>
+                        <outlet property="tipPercentageTextField" destination="2sB-ga-my7" id="X54-7F-UAs"/>
+                        <outlet property="totalAmountLabel" destination="Wic-kY-sTd" id="vPw-Bb-5rC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="136.26760563380282"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Ewa7K29.jpg" width="2560" height="1707"/>
+        <image name="Untitled 2.png" width="241" height="300"/>
+    </resources>
+</document>
